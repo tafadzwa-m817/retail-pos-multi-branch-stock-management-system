@@ -35,6 +35,11 @@ frontend/dist/
 frontend/.env.local
 frontend/.env.production
 
+# ─── Spring config with secrets ───────────────────────────────────────────────
+src/main/resources/application.properties
+src/main/resources/application-*.properties
+!src/main/resources/application.properties.example
+
 # ─── Environment / secrets ────────────────────────────────────────────────────
 .env
 .env.*

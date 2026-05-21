@@ -16,8 +16,8 @@ spring.jpa.show-sql=false
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.open-in-view=false
 
-# JWT
-jwt.secret=cmV0YWlsUG9zU3lzdGVtU2VjcmV0S2V5Rm9ySlduVG9rZW5HZW5lcmF0aW9uMjAyNA==
+# JWT — generate a strong base64 secret for production
+jwt.secret=REPLACE_WITH_STRONG_BASE64_SECRET
 jwt.expiration=3600000
 jwt.refresh-expiration=604800000
 
@@ -28,17 +28,17 @@ server.port=8080
 spring.mail.enabled=false
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
-spring.mail.username=your-email@gmail.com
-spring.mail.password=your-app-password
+spring.mail.username=REPLACE_WITH_GMAIL_ADDRESS
+spring.mail.password=REPLACE_WITH_APP_PASSWORD
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
-spring.mail.from=noreply@july28retail.co.zw
+spring.mail.from=noreply@your-domain.com
 
 # Tax
 tax.default-rate=15.0
 
 # Admin alert email for low-stock notifications
-admin.alert-email=admin@july28retail.co.zw
+admin.alert-email=admin@your-domain.com
 
 # Logging
 logging.level.zw.co.july28=INFO
